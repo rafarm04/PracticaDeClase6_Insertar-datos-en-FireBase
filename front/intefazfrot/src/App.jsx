@@ -5,14 +5,13 @@
 //Instala lo siguiente
 //npm install sockjs-client stompjs
 
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./pages/Navbar/Navbar";
 import Home from "./pages/mainPages/Home";
 import About from "./pages/mainPages/About";
 import Dashbord from "./pages/mainPages/Dashbord";
 import Default from "./pages/mainPages/Default";
-
+import PositionPerson from "./pages/mainPages/PositionPerson";
 
 function App() {
   return (
@@ -26,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/dashbord" element={<Dashbord />} />
+            <Route path="/position_person" element={<PositionPerson />} />
             <Route path="*" element={<Default />} />
           </Routes>
         </div>
